@@ -5,52 +5,83 @@
   <title>Yaocai Huang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;margin:0;padding:40px 16px;color:#222;}
-    .wrap{max-width:860px;margin:0 auto;text-align:center}
+    :root{--w:860px}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;margin:0;color:#222}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10}
+    nav{max-width:var(--w);margin:0 auto;display:flex;gap:16px;align-items:center;padding:10px 16px}
+    nav a{color:#222;text-decoration:none;padding:6px 10px;border-radius:8px}
+    nav a:hover{background:#f3f3f3}
+    .wrap{max-width:var(--w);margin:24px auto;padding:0 16px}
+    .center{text-align:center}
     img.avatar{width:200px;height:200px;border-radius:50%;object-fit:cover}
-    h1{margin:16px 0 8px;font-size:32px}
-    .links a{margin:0 8px;text-decoration:none}
-    .section{margin-top:28px;text-align:left}
+    h1{margin:12px 0 8px;font-size:32px}
+    h2{margin-top:32px}
+    ul{padding-left:20px}
     .muted{color:#666;font-size:14px;margin-top:40px;text-align:center}
+    .links a{margin:0 8px;text-decoration:none}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <img class="avatar" src="images/avatar.jpg" alt="Yaocai Huang">
-    <h1>Yaocai Huang</h1>
-    <div>Ph.D. candidate in Biomedical Engineering, University of Michigan.</div>
-    <div>Research: Ionizing Radiation Acoustic Imaging (iRAI), Photoacoustic & Ultrasound Imaging.</div>
-    <p class="links">
-      <a href="mailto:hyaocai@umich.edu">Email</a> ·
-      <a href="https://scholar.google.com/citations?user=kqmmZKEAAAAJ&hl=en">Google Scholar</a> ·
-      <a href="https://orcid.org/0009-0002-8597-4834">ORCID</a>
-    </p>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <div class="section">
+  <main class="wrap">
+    <section id="about" class="center">
+      <img class="avatar" src="images/avatar.jpg" alt="Yaocai Huang">
+      <h1>Yaocai Huang</h1>
+      <div>Ph.D. candidate in Biomedical Engineering, University of Michigan.</div>
+      <div>Research: Ionizing Radiation Acoustic Imaging (iRAI), Photoacoustic & Ultrasound Imaging.</div>
+      <p class="links">
+        <a href="mailto:hyaocai@umich.edu">Email</a> ·
+        <a href="https://scholar.google.com/citations?user=kqmmZKEAAAAJ&hl=en">Google Scholar</a> ·
+        <a href="https://orcid.org/0009-0002-8597-4834">ORCID</a>
+      </p>
+    </section>
+
+    <section id="news">
       <h2>News</h2>
       <ul>
         <li>[Aug 2025] Personal site launched on GitHub Pages.</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section id="education">
       <h2>Education</h2>
       <ul>
-        <li>Ph.D. in Biomedical Engineering, University of Michigan (2022– )</li>
-        <li>M.Eng. in Computer Technology, University of Chinese Academy of Sciences (2017–2020)</li>
-        <li>B.Eng. in Automation, University of Science and Technology Beijing (2013–2017)</li>
+        <li><strong>Ph.D. in Biomedical Engineering</strong>, University of Michigan (2022– ) — Concentration in Biomedical Imaging & Ultrasonics</li>
+        <li><strong>M.Eng. in Computer Technology</strong>, University of Chinese Academy of Sciences (2017–2020) — Concentration in Biomedical Ultrasound Imaging</li>
+        <li><strong>B.Eng. in Automation</strong>, University of Science and Technology Beijing (2013–2017)</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section id="publications">
       <h2>Publications (selected)</h2>
       <ul>
-        <li>iRAI–US dual-modality imaging for dose visualization. <em>Photoacoustics</em>, 2025.</li>
-        <li>Towards quantitative iRAI for radiation dose measurement. <em>Medical Physics</em>, 2025 (accepted).</li>
+        <li>Huang Y, Oraiqat I, Litzenberg D, Subramanian K, <em>et al.</em> Quantitative mapping of dose and structures during radiotherapy. <em>Photoacoustics</em>, 2025;44:100742.</li>
+        <li>Huang Y, Wei L, Litzenberg D, Li B, Ma C, Kim H, Liu Y, Zhang…, Towards quantitative iRAI for radiation dose measurement: validation from simulations to experiments. <em>Medical Physics</em>, 2025; accepted.</li>
+        <li>Ni L, Peng X, Huang Y, Zhu Y, Johnson L, Eaton KA, Dixon J, Wiggins P, Xu G. (Crohn’s disease study). <em>Journal of Crohn’s and Colitis</em>, 2025; accepted.</li>
+        <li>[Qiu Q, <strong>Huang Y</strong>], Zhang Z, Cox BF, Liu R, Hong J, Mu P, Lay H… Pilot study. <em>Ultrasound in Medicine & Biology</em>, 2020;46(3):796–804.</li>
+        <li>Su M, Zhang Z, <strong>Huang Y</strong>, Mu P, Yu Y, Liu R, Liang S, Zheng H, Q… <em>IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control</em>, 2019;66(5):849–856.</li>
+        <li>Hong J, Su M, Yu Y, Zhang Z, Liu R, <strong>Huang Y</strong>, Mu P, Zheng H, Q… <em>IEEE Transactions on Medical Imaging</em>, 2019;38(3):657–663.</li>
       </ul>
-    </div>
+      <p class="muted">(* 我先放了几条代表作；之后我们可以把完整列表批量导入。)</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hyaocai@umich.edu">hyaocai@umich.edu</a><br>
+      Google Scholar: <a href="https://scholar.google.com/citations?user=kqmmZKEAAAAJ&hl=en">link</a><br>
+      ORCID: <a href="https://orcid.org/0009-0002-8597-4834">0009-0002-8597-4834</a></p>
+    </section>
 
     <div class="muted">Hosted on GitHub Pages</div>
-  </div>
+  </main>
 </body>
 </html>
