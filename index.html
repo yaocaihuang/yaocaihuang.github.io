@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Yaocai Huang</title>
+<title>Yaocai Huang's Homepage</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Yaocai Huang — Ph.D. candidate in Biomedical Engineering at the University of Michigan. Research: ionizing radiation acoustic imaging (iRAI) and photoacoustic endoscopy.">
+<meta name="description" content="Yaocai Huang's Homepage — Ph.D. candidate in Biomedical Engineering at the University of Michigan. Research: ionizing radiation acoustic imaging (iRAI) and photoacoustic endoscopy.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yaocai Huang's Homepage">
+<meta property="og:description" content="Research: iRAI and photoacoustic endoscopy. Publications, presentations, and contact info.">
+<meta property="og:url" content="https://yaocaihuang.github.io/">
+<meta property="og:site_name" content="Yaocai Huang's Homepage">
 <style>
 :root{--w:860px;--fg:#222;--muted:#666;--bg:#fff;--line:#eee}
 @media (prefers-color-scheme: dark){
@@ -29,25 +35,35 @@ li{margin:6px 0}
 .links{margin-top:12px;text-align:center}
 .links a,.links span.link-item{
   margin:0 12px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;
-  color:var(--fg); /* 文本保持正文色 */
-  line-height:1;   /* 避免图标与文字上下不齐 */
+  color:var(--fg);
+  line-height:1;
 }
 .icon{
-  width:14px;height:14px;display:inline-block;background-size:contain;background-repeat:no-repeat;
-  position:relative;top:1px; /* 微调基线对齐 */
+  width:16px;height:16px;display:inline-block;background-size:contain;background-repeat:no-repeat;
+  position:relative;top:1px;
 }
-/* 仅图标着色，文字不变：通过为 icon 添加品牌色类 */
-.brand-scholar{color:#1a73e8}  /* Google blue */
-.brand-linkedin{color:#0A66C2} /* LinkedIn blue */
-.brand-email{color:#EA4335}    /* Gmail red */
-
-/* SVG 使用 currentColor，这样只改变图标颜色 */
-.icon-email{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2 10 7L22 6H2z"/></svg>')}
-.icon-scholar{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2 1 7l11 5 11-5-11-5zM2 9v2l10 5 10-5V9l-10 5L2 9zm10 7-6-3v3l6 3 6-3v-3l-6 3z"/></svg>')}
-.icon-linkedin{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5A2.48 2.48 0 1 1 0 3.5a2.48 2.48 0 0 1 4.98 0zM.5 8h4v16h-4zm7.5 0h3.8v2.16h.05C12.38 9.16 13.67 8 15.6 8c4.01 0 4.75 2.64 4.75 6.07V24h-4v-7.72c0-1.84-.03-4.21-2.56-4.21-2.56 0-2.95 2-2.95 4.07V24h-4z"/></svg>')}
+/* 彩色 SVG（内置固有色，不随文字变色） */
+.icon-email{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox=\"0 0 24 24\"><path fill=\"%23EA4335\" d=\"M2 6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.2L12 13 2 6.2V6z\"/><path fill=\"%234285F4\" d=\"M22 8.1V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.1l10 6.9 10-6.9z\"/></svg>')}
+.icon-scholar{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox=\"0 0 24 24\"><path fill=\"%231a73e8\" d=\"M12 2 1 7l11 5 11-5-11-5z\"/><path fill=\"%23288cff\" d=\"M2 9v2l10 5 10-5V9l-10 5L2 9z\"/><path fill=\"%231a73e8\" d=\"M12 16l-6-3v3l6 3 6-3v-3l-6 3z\"/></svg>')}
+.icon-linkedin{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox=\"0 0 24 24\"><rect x=\"0.5\" y=\"8\" width=\"4\" height=\"16\" fill=\"%230A66C2\"/><circle cx=\"2.5\" cy=\"3.5\" r=\"2.5\" fill=\"%230A66C2\"/><path fill=\"%230A66C2\" d=\"M8 8h3.8v2.16h.05C12.38 9.16 13.67 8 15.6 8c4.01 0 4.75 2.64 4.75 6.07V24h-4v-7.72c0-1.84-.03-4.21-2.56-4.21-2.56 0-2.95 2-2.95 4.07V24H8z\"/></svg>')}
 
 a[target="_blank"]::after{content:"↗";font-size:.85em;margin-left:2px;color:var(--muted)}
 </style>
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yaocai Huang",
+  "url": "https://yaocaihuang.github.io/",
+  "jobTitle": "Ph.D. Candidate in Biomedical Engineering",
+  "affiliation": {"@type": "CollegeOrUniversity","name": "University of Michigan"},
+  "sameAs": [
+    "https://scholar.google.com/citations?user=kqmmZKEAAAAJ&hl=en",
+    "https://www.linkedin.com/in/yaocai-huang-bb5438255/"
+  ]
+}
+</script>
 </head>
 <body>
 <header role="navigation" aria-label="Primary">
@@ -73,13 +89,13 @@ a[target="_blank"]::after{content:"↗";font-size:.85em;margin-left:2px;color:va
     </div>
     <p class="links" aria-label="External profiles">
       <a href="https://scholar.google.com/citations?user=kqmmZKEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-        <span class="icon icon-scholar brand-scholar"></span>Google Scholar
+        <span class="icon icon-scholar"></span>Google Scholar
       </a>
       <a href="https://www.linkedin.com/in/yaocai-huang-bb5438255/" target="_blank" rel="noopener noreferrer">
-        <span class="icon icon-linkedin brand-linkedin"></span>LinkedIn
+        <span class="icon icon-linkedin"></span>LinkedIn
       </a>
       <span class="link-item">
-        <span class="icon icon-email brand-email"></span>Email: hyaocai@umich.edu
+        <span class="icon icon-email"></span>Email: hyaocai@umich.edu
       </span>
     </p>
   </section>
@@ -87,10 +103,7 @@ a[target="_blank"]::after{content:"↗";font-size:.85em;margin-left:2px;color:va
   <section id="research">
     <h2>Research Interests</h2>
     <p>
-      My research focuses on ionizing radiation acoustic imaging (iRAI) and photoacoustic endoscopy, aiming to improve
-      radiotherapy dose visualization and develop endoscopic tools to assess intestinal diseases. I work across
-      simulations, phantom studies, and first-in-human experiments, with emphasis on algorithm development, system
-      integration, and quantitative validation for clinical translation.
+      My research focuses on ionizing radiation acoustic imaging (iRAI) and photoacoustic endoscopy, aiming to advance iRAI technologies for more precise radiotherapy and develop novel imaging tools to assess intestinal diseases. I have experience in both preclinical and human studies, with a strong track record in translational research, experimental design, and data analysis. Specifically, I am dedicated to improving the accuracy and clinical utility of iRAI in radiotherapy, and designing innovative endoscopic photoacoustic imaging devices and methods for evaluating intestinal diseases.
     </p>
   </section>
 
@@ -117,14 +130,14 @@ a[target="_blank"]::after{content:"↗";font-size:.85em;margin-left:2px;color:va
 
   <section id="presentations">
     <h2>Presentations</h2>
-    <ol>
+    <ul>
       <li>Huang Y, et al. Ionizing radiation acoustic and ultrasound dual-modality imaging for 3D visualization of dose on anatomical structure. <em>Photons Plus Ultrasound: Imaging and Sensing 2025</em>, SPIE, San Francisco, CA. January 25–30, 2025, poster.</li>
       <li>Huang Y, et al. Characterizing intestinal obstructions with a photoacoustic-ultrasound balloon catheter: studies with animals and human subjects in vivo. <em>Photons Plus Ultrasound: Imaging and Sensing 2025</em>, SPIE, San Francisco, CA. January 25–30, 2025, oral.</li>
       <li>Huang Y, et al. Quantitative ionizing radiation acoustic imaging for radiation dose measurement: a phantom study validation. <em>Photons Plus Ultrasound: Imaging and Sensing 2024</em>, SPIE, San Francisco, CA. January 27–February 1, 2024, oral.</li>
       <li>Huang Y, et al. A colonoscope-compatible photoacoustic and ultrasonic imaging catheter: initial clinical study in human subjects. <em>Photons Plus Ultrasound: Imaging and Sensing 2024</em>, SPIE, San Francisco, CA. January 27–February 1, 2024, oral.</li>
       <li>Huang Y, et al. In Vitro Study of a Tethered Micro-ultrasound Capsule Endoscopy and 3D Image Reconstruction. <em>IEEE International Ultrasonics Symposium (IUS)</em>, Glasgow, UK. October 6–9, 2019, oral.</li>
       <li>Huang Y, et al. Development of a mechanically-scanning microultrasound capsule endoscopy device and demonstration in vivo. <em>IEEE International Ultrasonics Symposium (IUS)</em>, Kobe, Japan. October 22–25, 2018, oral.</li>
-    </ol>
+    </ul>
   </section>
 
   <div class="muted">Hosted on GitHub Pages</div>
