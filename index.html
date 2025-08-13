@@ -8,25 +8,26 @@
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yaocai Huang's Homepage">
-<meta property="og:description" content="Research: iRAI and photoacoustic endoscopy. Publications, presentations, and contact info.">
+<meta property="og:description" content="Research: iRAI and photoacoustic endoscopy. Publications, presentations, skills, and contact info.">
 <meta property="og:url" content="https://yaocaihuang.github.io/">
 <meta property="og:site_name" content="Yaocai Huang's Homepage">
 <style>
-:root{--w:860px;--fg:#222;--muted:#666;--bg:#fff;--line:#eee}
+:root{--w:860px;--fg:#222;--muted:#666;--bg:#fff;--line:#eee;--header:72px}
 @media (prefers-color-scheme: dark){
   :root{--fg:#eaeaea;--muted:#b3b3b3;--bg:#111;--line:#333}
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+/* 修正锚点遮挡：给滚动容器预留顶部空间 */
+html{scroll-behavior:smooth; scroll-padding-top: calc(var(--header) + 12px)}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;margin:0;color:var(--fg);background:var(--bg)}
-header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:10;backdrop-filter:saturate(180%) blur(6px)}
-nav{max-width:var(--w);margin:0 auto;display:flex;gap:12px;align-items:center;padding:10px 16px;flex-wrap:wrap}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:10;backdrop-filter:saturate(180%) blur(6px);height:var(--header)}
+nav{max-width:var(--w);margin:0 auto;display:flex;gap:12px;align-items:center;padding:10px 16px;height:100%}
 nav a{color:var(--fg);text-decoration:none;padding:6px 10px;border-radius:8px}
 nav a:hover{background:rgba(127,127,127,.12)}
 .wrap{max-width:var(--w);margin:24px auto;padding:0 16px}
 img.avatar{width:200px;height:200px;border-radius:50%;object-fit:cover}
 h1{margin:12px 0 8px;font-size:32px;text-align:center}
-h2{margin:56px 0 8px;font-size:24px;scroll-margin-top:72px}
+h2{margin:56px 0 8px;font-size:24px;scroll-margin-top: calc(var(--header) + 12px)}
 ul{padding-left:20px;margin:8px 0 0}
 li{margin:6px 0}
 .muted{color:var(--muted);font-size:14px;margin:40px 0;text-align:center}
@@ -35,35 +36,17 @@ li{margin:6px 0}
 .links{margin-top:12px;text-align:center}
 .links a,.links span.link-item{
   margin:0 12px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;
-  color:var(--fg);
-  line-height:1;
+  color:var(--fg); line-height:1;
 }
-.icon{
-  width:16px;height:16px;display:inline-block;background-size:contain;background-repeat:no-repeat;
-  position:relative;top:1px;
-}
-/* 彩色 SVG（内置固有色，不随文字变色） */
+.icon{width:16px;height:16px;display:inline-block;background-size:contain;background-repeat:no-repeat;position:relative;top:1px}
+
+/* 彩色图标 */
 .icon-email{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox=\"0 0 24 24\"><path fill=\"%23EA4335\" d=\"M2 6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.2L12 13 2 6.2V6z\"/><path fill=\"%234285F4\" d=\"M22 8.1V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.1l10 6.9 10-6.9z\"/></svg>')}
 .icon-scholar{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox=\"0 0 24 24\"><path fill=\"%231a73e8\" d=\"M12 2 1 7l11 5 11-5-11-5z\"/><path fill=\"%23288cff\" d=\"M2 9v2l10 5 10-5V9l-10 5L2 9z\"/><path fill=\"%231a73e8\" d=\"M12 16l-6-3v3l6 3 6-3v-3l-6 3z\"/></svg>')}
 .icon-linkedin{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox=\"0 0 24 24\"><rect x=\"0.5\" y=\"8\" width=\"4\" height=\"16\" fill=\"%230A66C2\"/><circle cx=\"2.5\" cy=\"3.5\" r=\"2.5\" fill=\"%230A66C2\"/><path fill=\"%230A66C2\" d=\"M8 8h3.8v2.16h.05C12.38 9.16 13.67 8 15.6 8c4.01 0 4.75 2.64 4.75 6.07V24h-4v-7.72c0-1.84-.03-4.21-2.56-4.21-2.56 0-2.95 2-2.95 4.07V24H8z\"/></svg>')}
 
 a[target="_blank"]::after{content:"↗";font-size:.85em;margin-left:2px;color:var(--muted)}
 </style>
-<!-- Schema.org -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Yaocai Huang",
-  "url": "https://yaocaihuang.github.io/",
-  "jobTitle": "Ph.D. Candidate in Biomedical Engineering",
-  "affiliation": {"@type": "CollegeOrUniversity","name": "University of Michigan"},
-  "sameAs": [
-    "https://scholar.google.com/citations?user=kqmmZKEAAAAJ&hl=en",
-    "https://www.linkedin.com/in/yaocai-huang-bb5438255/"
-  ]
-}
-</script>
 </head>
 <body>
 <header role="navigation" aria-label="Primary">
@@ -73,6 +56,7 @@ a[target="_blank"]::after{content:"↗";font-size:.85em;margin-left:2px;color:va
     <a href="#education">Education</a>
     <a href="#publications">Publications</a>
     <a href="#presentations">Presentations</a>
+    <a href="#skills">Skills</a>
     <span style="margin-left:auto" class="muted">Last updated: Aug 2025</span>
   </nav>
 </header>
@@ -137,6 +121,14 @@ a[target="_blank"]::after{content:"↗";font-size:.85em;margin-left:2px;color:va
       <li>Huang Y, et al. A colonoscope-compatible photoacoustic and ultrasonic imaging catheter: initial clinical study in human subjects. <em>Photons Plus Ultrasound: Imaging and Sensing 2024</em>, SPIE, San Francisco, CA. January 27–February 1, 2024, oral.</li>
       <li>Huang Y, et al. In Vitro Study of a Tethered Micro-ultrasound Capsule Endoscopy and 3D Image Reconstruction. <em>IEEE International Ultrasonics Symposium (IUS)</em>, Glasgow, UK. October 6–9, 2019, oral.</li>
       <li>Huang Y, et al. Development of a mechanically-scanning microultrasound capsule endoscopy device and demonstration in vivo. <em>IEEE International Ultrasonics Symposium (IUS)</em>, Kobe, Japan. October 22–25, 2018, oral.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Lab Skills:</strong> Multimodal Imaging (iRAI, Photoacoustic, Ultrasound), MATLAB Data Processing, Animal Studies, Translational Imaging Research, Endoscopic Catheter Design, Verasonics Platform Operation, Laser System Operation</li>
+      <li><strong>Computer Skills:</strong> MATLAB, k-Wave, Field II, SOLIDWORKS, Amira Software</li>
     </ul>
   </section>
 
