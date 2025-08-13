@@ -1,5 +1,7 @@
 # Yaocai Huang
 
+<img src="images/avatar.jpg" alt="Yaocai Huang" width="200" style="border-radius:50%;">
+
 Ph.D. candidate in Biomedical Engineering, University of Michigan.  
 Research: Ionizing Radiation Acoustic Imaging (iRAI), Photoacoustic & Ultrasound Imaging.  
 
