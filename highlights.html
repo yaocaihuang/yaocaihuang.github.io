@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Highlights – iRAI | Yaocai Huang</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Highlights: iRAI dose visualization during radiotherapy.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Highlights – iRAI">
+<meta property="og:description" content="iRAI uses ultrasound to listen to X-ray–induced sound and shows where dose lands, helping spare healthy organs.">
+<meta property="og:url" content="https://yaocaihuang.github.io/highlights.html">
+<meta property="og:site_name" content="Yaocai Huang's Homepage">
+<style>
+:root{--w:860px;--fg:#222;--muted:#666;--bg:#fff;--line:#eee;--header:72px}
+@media (prefers-color-scheme: dark){
+  :root{--fg:#eaeaea;--muted:#b3b3b3;--bg:#111;--line:#333}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top: calc(var(--header) + 12px)}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;margin:0;color:var(--fg);background:var(--bg)}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:10;backdrop-filter:saturate(180%) blur(6px);height:var(--header)}
+nav{max-width:var(--w);margin:0 auto;display:flex;gap:12px;align-items:center;padding:10px 16px;height:100%}
+nav a{color:var(--fg);text-decoration:none;padding:6px 10px;border-radius:8px}
+nav a:hover{background:rgba(127,127,127,.12)}
+.wrap{max-width:var(--w);margin:24px auto;padding:0 16px}
+h1{margin:12px 0 8px;font-size:28px;text-align:center}
+.figure{display:flex;flex-direction:column;align-items:center;gap:14px;margin:24px 0}
+.figure img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:12px}
+.caption{max-width:760px;font-size:16px}
+.caption p{margin:0 0 8px}
+.muted{color:var(--muted);font-size:14px;margin:40px 0;text-align:center}
+.btn-row{display:flex;gap:10px;justify-content:center;margin-top:8px}
+.btn{display:inline-block;padding:8px 12px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg)}
+.btn:hover{background:rgba(127,127,127,.12)}
+</style>
+</head>
+<body>
+<header role="navigation" aria-label="Primary">
+  <nav>
+    <a href="index.html#about">About Me</a>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#publications">Publications</a>
+    <a href="index.html#presentations">Presentations</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="highlights.html" aria-current="page" style="font-weight:600">Highlights</a>
+    <span style="margin-left:auto" class="muted">Last updated: Aug 2025</span>
+  </nav>
+</header>
+
+<main class="wrap">
+  <h1>Highlights – iRAI</h1>
+  <section class="figure">
+    <img src="images/iRAI.png" alt="Schematic and operating principle of iRAI during radiotherapy">
+    <div class="btn-row">
+      <a class="btn" href="index.html">← Back to Home</a>
+      <!-- 如需高清 PDF，可放 docs/iRAI_figure1.pdf 并启用下面按钮 -->
+      <!-- <a class="btn" href="docs/iRAI_figure1.pdf" target="_blank" rel="noopener noreferrer">Open PDF ↗</a> -->
+    </div>
+    <div class="caption">
+      <p><strong>iRAI</strong> uses a special ultrasound array to “listen” to tiny sound waves created when therapeutic X-rays hit the body.</p>
+      <p>By turning these signals into 3D images fused with CT, it lets doctors see exactly where the radiation dose lands inside the patient.</p>
+      <p>This real-time feedback helps ensure the radiation precisely hits the tumor while sparing healthy organs.</p>
+    </div>
+  </section>
+
+  <div class="muted">Hosted on GitHub Pages</div>
+</main>
+</body>
+</html>
