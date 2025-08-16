@@ -1,17 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Gallery | Yaocai Huang</title>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><title>Gallery | Yaocai Huang</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Photo gallery of Yaocai Huang">
 <style>
 :root{--w:860px;--fg:#222;--muted:#666;--bg:#fff;--line:#eee;--header:72px}
-@media (prefers-color-scheme: dark){
-  :root{--fg:#eaeaea;--muted:#b3b3b3;--bg:#111;--line:#333}
-}
+@media (prefers-color-scheme: dark){:root{--fg:#eaeaea;--muted:#b3b3b3;--bg:#111;--line:#333}}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth; scroll-padding-top: calc(var(--header) + 12px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 12px)}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;margin:0;color:var(--fg);background:var(--bg)}
 header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:10;backdrop-filter:saturate(180%) blur(6px);height:var(--header)}
 nav{max-width:var(--w);margin:0 auto;display:flex;gap:12px;align-items:center;padding:10px 16px;height:100%; justify-content:center;}
@@ -22,7 +17,7 @@ h1{margin:12px 0 8px;font-size:24px;text-align:center}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 @media (min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
 @media (min-width:960px){.grid{grid-template-columns:repeat(4,1fr)}}
-.card{position:relative;overflow:hidden;border-radius:12px;border:1px solid var(--line);background:var(--bg)}
+.card{position:relative;overflow:hidden;border-radius:12px;border:1px solid var(--line);background:var(--bg);text-decoration:none;color:inherit}
 .card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}
 .card:hover img{transform:scale(1.03)}
 .cap{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.45);color:#fff;font-size:12px;padding:3px 6px;border-radius:8px}
@@ -32,126 +27,51 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 .viewer img{max-width:90vw;max-height:80vh;display:block}
 .viewer .close{position:absolute;top:8px;right:8px;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:6px 10px;cursor:pointer}
 .muted{color:var(--muted);font-size:14px;margin:40px 0;text-align:center}
-</style>
-</head>
-<body>
-<header role="navigation" aria-label="Primary">
-  <nav>
-    <a href="index.html#about">About Me</a>
-    <a href="index.html#research">Research</a>
-    <a href="index.html#publications">Publications</a>
-    <a href="index.html#presentations">Presentations</a>
-    <a href="highlights.html">Highlights</a>
-    <a href="gallery.html" aria-current="page" style="font-weight:600">Gallery</a>
-  </nav>
-</header>
-
-<main class="wrap">
-  <h1>Gallery</h1>
-  <div class="grid" id="grid">
-    <a class="card" href="images/photos/59599a7512403771da4737ab328c670b 2.JPG" data-cap="59599a7512403771da4737au328c670u 2">
-      <img src="images/photos/59599a7512403771da4737ab328c670b 2.JPG" alt="59599a7512403771da4737au328c670u 2" loading="lazy">
-      <span class="cap">59599a7512403771da4737au328c670u 2</span>
-    </a>
-    <a class="card" href="images/photos/IMG_2768 2.JPG" data-cap="IMG 2768 2">
-      <img src="images/photos/IMG_2768 2.JPG" alt="IMG 2768 2" loading="lazy">
-      <span class="cap">IMG 2768 2</span>
-    </a>
-    <a class="card" href="images/photos/IMG_2769 2.JPG" data-cap="IMG 2769 2">
-      <img src="images/photos/IMG_2769 2.JPG" alt="IMG 2769 2" loading="lazy">
-      <span class="cap">IMG 2769 2</span>
-    </a>
-    <a class="card" href="images/photos/IMG_8251 2.JPG" data-cap="IMG 8251 2">
-      <img src="images/photos/IMG_8251 2.JPG" alt="IMG 8251 2" loading="lazy">
-      <span class="cap">IMG 8251 2</span>
-    </a>
-    <a class="card" href="images/photos/IMG_9946 2.JPG" data-cap="IMG 9946 2">
-      <img src="images/photos/IMG_9946 2.JPG" alt="IMG 9946 2" loading="lazy">
-      <span class="cap">IMG 9946 2</span>
-    </a>
-    <a class="card" href="images/photos/ce8bad4aa8fb7f1336799272e2acd4a7 2.JPG" data-cap="ce8uad4aa8fu7f1336799272e2acd4a7 2">
-      <img src="images/photos/ce8bad4aa8fb7f1336799272e2acd4a7 2.JPG" alt="ce8uad4aa8fu7f1336799272e2acd4a7 2" loading="lazy">
-      <span class="cap">ce8uad4aa8fu7f1336799272e2acd4a7 2</span>
-    </a>
-    <a class="card" href="images/photos/d2cac0b56fbe6034acf1c329bac106c5 2.JPG" data-cap="d2cac0u56fue6034acf1c329uac106c5 2">
-      <img src="images/photos/d2cac0b56fbe6034acf1c329bac106c5 2.JPG" alt="d2cac0u56fue6034acf1c329uac106c5 2" loading="lazy">
-      <span class="cap">d2cac0u56fue6034acf1c329uac106c5 2</span>
-    </a>
-    <a class="card" href="images/photos/f78b8f71f7b3a58cec294e3707fdba9f 2.JPG" data-cap="f78u8f71f7u3a58cec294e3707fdua9f 2">
-      <img src="images/photos/f78b8f71f7b3a58cec294e3707fdba9f 2.JPG" alt="f78u8f71f7u3a58cec294e3707fdua9f 2" loading="lazy">
-      <span class="cap">f78u8f71f7u3a58cec294e3707fdua9f 2</span>
-    </a>
-    <a class="card" href="images/photos/img_3022_2.jpg" data-cap="img 3022 2">
-      <img src="images/photos/img_3022_2.jpg" alt="img 3022 2" loading="lazy">
-      <span class="cap">img 3022 2</span>
-    </a>
-    <a class="card" href="images/photos/img_4491_2.jpg" data-cap="img 4491 2">
-      <img src="images/photos/img_4491_2.jpg" alt="img 4491 2" loading="lazy">
-      <span class="cap">img 4491 2</span>
-    </a>
-    <a class="card" href="images/photos/img_5093_2.jpg" data-cap="img 5093 2">
-      <img src="images/photos/img_5093_2.jpg" alt="img 5093 2" loading="lazy">
-      <span class="cap">img 5093 2</span>
-    </a>
-    <a class="card" href="images/photos/img_5460_2.jpg" data-cap="img 5460 2">
-      <img src="images/photos/img_5460_2.jpg" alt="img 5460 2" loading="lazy">
-      <span class="cap">img 5460 2</span>
-    </a>
-    <a class="card" href="images/photos/img_5653_2.jpg" data-cap="img 5653 2">
-      <img src="images/photos/img_5653_2.jpg" alt="img 5653 2" loading="lazy">
-      <span class="cap">img 5653 2</span>
-    </a>
-    <a class="card" href="images/photos/img_6018_2.jpg" data-cap="img 6018 2">
-      <img src="images/photos/img_6018_2.jpg" alt="img 6018 2" loading="lazy">
-      <span class="cap">img 6018 2</span>
-    </a>
-    <a class="card" href="images/photos/img_6039_2.jpg" data-cap="img 6039 2">
-      <img src="images/photos/img_6039_2.jpg" alt="img 6039 2" loading="lazy">
-      <span class="cap">img 6039 2</span>
-    </a>
-    <a class="card" href="images/photos/img_6917_2.jpg" data-cap="img 6917 2">
-      <img src="images/photos/img_6917_2.jpg" alt="img 6917 2" loading="lazy">
-      <span class="cap">img 6917 2</span>
-    </a>
-    <a class="card" href="images/photos/img_7132_2.jpg" data-cap="img 7132 2">
-      <img src="images/photos/img_7132_2.jpg" alt="img 7132 2" loading="lazy">
-      <span class="cap">img 7132 2</span>
-    </a>
-    <a class="card" href="images/photos/img_7259_2.jpg" data-cap="img 7259 2">
-      <img src="images/photos/img_7259_2.jpg" alt="img 7259 2" loading="lazy">
-      <span class="cap">img 7259 2</span>
-    </a>
-    <a class="card" href="images/photos/img_9680_2.jpg" data-cap="img 9680 2">
-      <img src="images/photos/img_9680_2.jpg" alt="img 9680 2" loading="lazy">
-      <span class="cap">img 9680 2</span>
-    </a>
-    <a class="card" href="images/photos/img_9892_2.jpg" data-cap="img 9892 2">
-      <img src="images/photos/img_9892_2.jpg" alt="img 9892 2" loading="lazy">
-      <span class="cap">img 9892 2</span>
-    </a>
-  </div>
-  <dialog id="viewer">
-    <div class="viewer">
-      <button class="close" onclick="document.getElementById('viewer').close()">Close</button>
-      <img id="big" alt="">
-      <div class="muted" id="cap"></div>
-    </div>
-  </dialog>
-  <div class="muted">Hosted on GitHub Pages</div>
+</style></head><body>
+<header role="navigation" aria-label="Primary"><nav>
+<a href="index.html#about">About Me</a>
+<a href="index.html#research">Research</a>
+<a href="index.html#publications">Publications</a>
+<a href="index.html#presentations">Presentations</a>
+<a href="highlights.html">Highlights</a>
+<a href="gallery.html" aria-current="page" style="font-weight:600">Gallery</a>
+</nav></header>
+<main class="wrap"><h1>Gallery</h1><div class="grid" id="grid">
+<a class="card" href="images/photos/59599a7512403771da4737ab328c670b_2.jpg" data-cap="59599a7512403771da4737au328c670u 2"><img src="images/photos/59599a7512403771da4737ab328c670b_2.jpg" alt="59599a7512403771da4737au328c670u 2" loading="lazy"><span class="cap">59599a7512403771da4737au328c670u 2</span></a>
+<a class="card" href="images/photos/IMG_2768_2.jpg" data-cap="IMG 2768 2"><img src="images/photos/IMG_2768_2.jpg" alt="IMG 2768 2" loading="lazy"><span class="cap">IMG 2768 2</span></a>
+<a class="card" href="images/photos/IMG_2769_2.jpg" data-cap="IMG 2769 2"><img src="images/photos/IMG_2769_2.jpg" alt="IMG 2769 2" loading="lazy"><span class="cap">IMG 2769 2</span></a>
+<a class="card" href="images/photos/IMG_8251_2.jpg" data-cap="IMG 8251 2"><img src="images/photos/IMG_8251_2.jpg" alt="IMG 8251 2" loading="lazy"><span class="cap">IMG 8251 2</span></a>
+<a class="card" href="images/photos/IMG_9946_2.jpg" data-cap="IMG 9946 2"><img src="images/photos/IMG_9946_2.jpg" alt="IMG 9946 2" loading="lazy"><span class="cap">IMG 9946 2</span></a>
+<a class="card" href="images/photos/ce8bad4aa8fb7f1336799272e2acd4a7_2.jpg" data-cap="ce8uad4aa8fu7f1336799272e2acd4a7 2"><img src="images/photos/ce8bad4aa8fb7f1336799272e2acd4a7_2.jpg" alt="ce8uad4aa8fu7f1336799272e2acd4a7 2" loading="lazy"><span class="cap">ce8uad4aa8fu7f1336799272e2acd4a7 2</span></a>
+<a class="card" href="images/photos/d2cac0b56fbe6034acf1c329bac106c5_2.jpg" data-cap="d2cac0u56fue6034acf1c329uac106c5 2"><img src="images/photos/d2cac0b56fbe6034acf1c329bac106c5_2.jpg" alt="d2cac0u56fue6034acf1c329uac106c5 2" loading="lazy"><span class="cap">d2cac0u56fue6034acf1c329uac106c5 2</span></a>
+<a class="card" href="images/photos/f78b8f71f7b3a58cec294e3707fdba9f_2.jpg" data-cap="f78u8f71f7u3a58cec294e3707fdua9f 2"><img src="images/photos/f78b8f71f7b3a58cec294e3707fdba9f_2.jpg" alt="f78u8f71f7u3a58cec294e3707fdua9f 2" loading="lazy"><span class="cap">f78u8f71f7u3a58cec294e3707fdua9f 2</span></a>
+<a class="card" href="images/photos/img_3022_2.jpg" data-cap="img 3022 2"><img src="images/photos/img_3022_2.jpg" alt="img 3022 2" loading="lazy"><span class="cap">img 3022 2</span></a>
+<a class="card" href="images/photos/img_4491_2.jpg" data-cap="img 4491 2"><img src="images/photos/img_4491_2.jpg" alt="img 4491 2" loading="lazy"><span class="cap">img 4491 2</span></a>
+<a class="card" href="images/photos/img_5093_2.jpg" data-cap="img 5093 2"><img src="images/photos/img_5093_2.jpg" alt="img 5093 2" loading="lazy"><span class="cap">img 5093 2</span></a>
+<a class="card" href="images/photos/img_5460_2.jpg" data-cap="img 5460 2"><img src="images/photos/img_5460_2.jpg" alt="img 5460 2" loading="lazy"><span class="cap">img 5460 2</span></a>
+<a class="card" href="images/photos/img_5653_2.jpg" data-cap="img 5653 2"><img src="images/photos/img_5653_2.jpg" alt="img 5653 2" loading="lazy"><span class="cap">img 5653 2</span></a>
+<a class="card" href="images/photos/img_6018_2.jpg" data-cap="img 6018 2"><img src="images/photos/img_6018_2.jpg" alt="img 6018 2" loading="lazy"><span class="cap">img 6018 2</span></a>
+<a class="card" href="images/photos/img_6039_2.jpg" data-cap="img 6039 2"><img src="images/photos/img_6039_2.jpg" alt="img 6039 2" loading="lazy"><span class="cap">img 6039 2</span></a>
+<a class="card" href="images/photos/img_6917_2.jpg" data-cap="img 6917 2"><img src="images/photos/img_6917_2.jpg" alt="img 6917 2" loading="lazy"><span class="cap">img 6917 2</span></a>
+<a class="card" href="images/photos/img_7132_2.jpg" data-cap="img 7132 2"><img src="images/photos/img_7132_2.jpg" alt="img 7132 2" loading="lazy"><span class="cap">img 7132 2</span></a>
+<a class="card" href="images/photos/img_7259_2.jpg" data-cap="img 7259 2"><img src="images/photos/img_7259_2.jpg" alt="img 7259 2" loading="lazy"><span class="cap">img 7259 2</span></a>
+<a class="card" href="images/photos/img_9680_2.jpg" data-cap="img 9680 2"><img src="images/photos/img_9680_2.jpg" alt="img 9680 2" loading="lazy"><span class="cap">img 9680 2</span></a>
+<a class="card" href="images/photos/img_9892_2.jpg" data-cap="img 9892 2"><img src="images/photos/img_9892_2.jpg" alt="img 9892 2" loading="lazy"><span class="cap">img 9892 2</span></a>
+</div>
+<dialog id="viewer"><div class="viewer">
+<button class="close" onclick="document.getElementById('viewer').close()">Close</button>
+<img id="big" alt=""><div class="muted" id="cap"></div>
+</div></dialog>
+<div class="muted">Hosted on GitHub Pages</div>
 </main>
 <script>
 const dlg=document.getElementById('viewer');
 const big=document.getElementById('big');
 const cap=document.getElementById('cap');
 document.getElementById('grid').addEventListener('click',e=>{
-  const a=e.target.closest('a.card');
-  if(!a)return;
-  e.preventDefault();
-  big.src=a.getAttribute('href');
-  big.alt=a.querySelector('img')?a.querySelector('img').alt:'';
-  cap.textContent=a.dataset.cap||'';
-  dlg.showModal();
+  const a=e.target.closest('a.card'); if(!a) return; e.preventDefault();
+  big.src=a.getAttribute('href'); big.alt=a.querySelector('img')?a.querySelector('img').alt:'';
+  cap.textContent=a.dataset.cap||''; dlg.showModal();
 });
 </script>
-</body>
-</html>
+</body></html>
